@@ -79,6 +79,4 @@ class RestaurantTest < Minitest::Test
 
     assert_equal ['BURRATA', 'PIZZETA', 'RAVIOLI'], restaurant2.menu_dish_names
       end
-
-
 end

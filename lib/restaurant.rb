@@ -24,7 +24,16 @@ class Restaurant
     end
   end
 
-  def menu_dish_names
-    p @dishes.map(&:capitalize) ##why is htis not working???
+  # def menu_dish_names
+  #   p @dishes.map(&:capitalize) ##why is htis not working???
+  # end
+
+  def announce_closing_time(hours)
+    opening_time = @opening_time.to_i + hours
+    if opening_time.to_i < 12
+      p "#{name} will be closing at #{opening_time}:00 AM"
+    else
+      p "#{name} will be closing at #{opening_time.to_i - 12}:00 PM"
+    end
   end
 end
