@@ -23,4 +23,8 @@ class Restaurant
       false
     end
   end
+
+  def menu_dish_names
+    p @dishes.map(&:capitalize) ##why is htis not working???
+  end
 end
