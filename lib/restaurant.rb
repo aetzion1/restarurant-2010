@@ -24,9 +24,13 @@ class Restaurant
     end
   end
 
-  # def menu_dish_names
-  #   p @dishes.map(&:capitalize) ##why is htis not working???
-  # end
+# Why is below not working? Try map?
+  def menu_dish_names
+    dishes.each do |dish|
+      dish.upcase
+    end
+    p @dishes
+  end
 
   def announce_closing_time(hours)
     opening_time = @opening_time.to_i + hours
